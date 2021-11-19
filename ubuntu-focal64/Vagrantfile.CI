@@ -47,5 +47,6 @@ Vagrant.configure("2") do |config|
     cat /vagrant/vagrant-master-node.pub > /home/jenkins/.ssh/authorized_keys
     chmod 600 /home/jenkins/.ssh/authorized_keys
     chown -R jenkins:jenkins /home/jenkins/.ssh
+    gpasswd -a jenkins docker
   SHELL
 end
