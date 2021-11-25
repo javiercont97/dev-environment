@@ -1,0 +1,3 @@
+[submodule "ubuntu-focal64/ansible-common-roles"]
+	path = ubuntu-focal64/ansible-common-roles
+	url = git@github.com:javiercont97/ansible-common-roles.git
