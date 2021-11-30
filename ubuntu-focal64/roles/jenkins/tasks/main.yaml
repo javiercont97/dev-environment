@@ -4,8 +4,8 @@
     name: jenkins
     groups: users, docker
     state: present
-    shell: /bin/shell
-    create_home: yes
+    shell: /bin/bash
+    create_home: true
 
 - name: Create ssh directory
   file:
@@ -28,4 +28,4 @@
   file:
     path: /home/jenkins/.ssh
     owner: jenkins
-    recurse: yes
+    recurse: true

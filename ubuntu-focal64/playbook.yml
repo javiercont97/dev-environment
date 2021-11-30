@@ -1,16 +1,13 @@
 ---
-- name: Install 
+- name: Install
   hosts: all
-  become: yes
+  become: true
   become_method: sudo
-  
+
   roles:
     - { role: common, tags: common }
     - { role: docker, tags: docker }
     - { role: jenkins, tags: jenkins }
-    - { role: ansible-common-roles/packer, tags: packer }
+    # - { role: ansible-common-roles/packer, tags: packer }
 
   tasks: []
-         
-    
-       
